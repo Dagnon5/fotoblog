@@ -11,6 +11,7 @@
     {% if user.is_authenticated %}
         <p> Vous êtes connecter en tant que {{ request.user }}. <a href="{% url 'logout' %}">
             Se déconnecter</a></p>
+    <p>Voulez-vous <a href="{% url 'password_change' %}">changer votre mot de passe ?</a></p>
 
     {% endif %}
 
